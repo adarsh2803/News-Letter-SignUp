@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>NewsLetter SignUp</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="style/styles.css" rel="stylesheet"><!--//we are typing address w.r.t "public" folder-->
+    <!--we did this because server cannot access static  local files directly ,when we use "app.get()"-->
+    <!-- so we use app.use(express.static("public")); so our server can access local files -->
+    <!-- from a folder named "public" , all static local data will be taken from that folder -->
+  </head>
+  <body class="text-center">
+    <form class="form-signin" action="/" method="post">
+  <img class="mb-4" src="https://gallery.mailchimp.com/54e7a0a4b2cec3413c39e9706/images/e07fb94f-4660-461e-b9cf-5acead9d2ca1.png" alt="" width="300" height="150">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+   <input type="text" name="fn" class="form-control top" placeholder="First Name" required autofocus />
+   <input type="text" name="ln" class="form-control middle" placeholder="Last Name" required />
+   <input type="email" name="email" class="form-control bottom" placeholder="Email" required />
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Me Up</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+</form>
+</body>
+</html>
